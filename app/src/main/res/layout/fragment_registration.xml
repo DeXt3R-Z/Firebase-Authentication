@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffee2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/Login_BG"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-25dp"
+        android:background="@drawable/login_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Registration"
+        android:textColor="#634832"
+        android:textSize="29sp"
+        app:layout_constraintStart_toStartOf="@+id/et_email"
+        app:layout_constraintTop_toTopOf="@+id/Login_BG" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_outline"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:textColor="#38220f"
+        android:textColorHint="#634832"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_outline"
+        android:paddingStart="15dp"
+        android:hint="Password"
+        android:textColorHint="#634832"
+        android:textColor="#38220f"
+        app:layout_constraintEnd_toEndOf="@+id/et_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <EditText
+        android:id="@+id/et_confirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_outline"
+        android:paddingStart="15dp"
+        android:hint="Confirm Password"
+        android:textColorHint="#634832"
+        android:textColor="#38220f"
+        app:layout_constraintEnd_toEndOf="@+id/et_Password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Password"
+        app:layout_constraintTop_toBottomOf="@+id/et_Password" />
+
+
+    <View
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/google_github_bg"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/view_Github"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_GoogleRegistration"
+        app:layout_constraintTop_toBottomOf="@+id/et_confirmPassword" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textSize="18sp"
+        android:clickable="false"
+        android:textColor="#ece0d1"
+        android:letterSpacing="0.2"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toTopOf="@+id/btnRegister" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@drawable/divider"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_GoogleRegistration"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textSize="13sp"
+        android:textColor="#38220f"
+        android:fontFamily="@font/poppins_semi_bold"
+        app:layout_constraintBottom_toTopOf="@+id/view_GoogleRegistration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@drawable/divider"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="-10dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_GoogleRegistration"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <View
+        android:id="@+id/view_GoogleRegistration"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/google_github_bg"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/view_Github"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/google"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/view_GoogleRegistration"
+        app:layout_constraintEnd_toEndOf="@+id/view_GoogleRegistration"
+        app:layout_constraintStart_toStartOf="@+id/view_GoogleRegistration"
+        app:layout_constraintTop_toTopOf="@+id/view_GoogleRegistration" />
+
+    <View
+        android:id="@+id/view_Github"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:background="@drawable/google_github_bg"
+        app:layout_constraintBottom_toBottomOf="@id/view_GoogleRegistration"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/view_GoogleRegistration"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/github"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/view_Github"
+        app:layout_constraintEnd_toEndOf="@+id/view_Github"
+        app:layout_constraintStart_toStartOf="@+id/view_Github"
+        app:layout_constraintTop_toTopOf="@+id/view_Github" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/Login_BG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_GoogleRegistration">
+
+        <TextView
+            android:id="@+id/tv_newHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="already have an account?"
+            android:textSize="15sp"
+            android:textColor="#38220f"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:id="@+id/tv_RegisterNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Login!"
+            android:textSize="16sp"
+            android:textColor="#967259"
+            android:fontFamily="@font/poppins_bold"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

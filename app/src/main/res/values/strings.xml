@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Firebase Authentication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+<!--    <string name="default_web_client_id">281644830060-hjtqnt30dn48mv5ekdb98au119s9e3ak.apps.googleusercontent.com</string>-->
+</resources>
